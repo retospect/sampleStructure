@@ -1,13 +1,10 @@
 # Local configuration #
-#######################
 local.properties
 
 # Compiled source #
-###################
 *.class
 
 # Packages #
-############
 *.7z
 *.dmg
 *.gz
@@ -18,23 +15,19 @@ local.properties
 *.zip
 
 # Logs and databases #
-######################
 *.log
 
 # OS generated files #
-######################
 .DS_Store*
 ehthumbs.db
 Icon?
 Thumbs.db
 
 # Editor Files #
-################
 *~
 *.swp
 
 # Gradle Files #
-################
 .gradle
 .m2
 
@@ -49,3 +42,7 @@ Thumbs.db
 .project
 .settings
 .metadata
+
+# Android Studio specific files/directories
+*.idea
+*.iml
