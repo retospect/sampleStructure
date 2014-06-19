@@ -27,8 +27,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    //compile group: 'com.android.support',               name: 'appcompat-v7',       version: '19.1.+'
-    compile group: 'com.actionbarsherlock',             name: 'actionbarsherlock',  version: '4.4.0'
+    compile group: 'com.android.support',               name: 'appcompat-v7',       version: '19.1.+'
+    //compile group: 'com.actionbarsherlock',             name: 'actionbarsherlock',  version: '4.4.0'
     //compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
     compile group: 'com.koushikdutta.async',            name: 'androidasync',       version: '1.2.6'
     compile group: 'com.koushikdutta.ion',              name: 'ion',                version: '1.2.7'
