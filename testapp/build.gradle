@@ -1,40 +1,7 @@
-apply plugin: 'android'
-
-repositories {
-    // For sliding menu support
-    maven { url "http://jzaccone.github.io/SlidingMenu-aar" }
-    mavenCentral()
-}
 
 android {
-    compileSdkVersion 18
-    buildToolsVersion "19.1.0"
-
     defaultConfig {
-        applicationId     "com.originate.testapp.testapp"
-        testInstrumentationRunner "com.originate.testapp.TestClass"
-        versionCode 12
-        versionName "2.0"
-        minSdkVersion 16
-        targetSdkVersion 18
+        applicationId               "com.originate.testapp.testapp"
+        testInstrumentationRunner   "com.originate.testapp.TestClass"
     }
-    buildTypes {
-        release {
-            runProguard false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-}
-
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile group: 'com.android.support',               name: 'appcompat-v7',       version: '19.1.+'
-    //compile group: 'com.actionbarsherlock',             name: 'actionbarsherlock',  version: '4.4.0'
-    //compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
-    compile group: 'com.koushikdutta.async',            name: 'androidasync',       version: '1.2.6'
-    compile group: 'com.koushikdutta.ion',              name: 'ion',                version: '1.2.7'
-    compile group: 'com.jeremyfeinstein.slidingmenu',   name: 'library',            version: '1.3'
-    compile group: 'com.j256.ormlite',                  name: 'ormlite-android',    version: '4.48'
-
-    androidTestCompile group: 'com.google.guava',       name: 'guava',              version: '11.0.+'
 }
