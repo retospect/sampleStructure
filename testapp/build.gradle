@@ -11,7 +11,8 @@ android {
     buildToolsVersion "19.1.0"
 
     defaultConfig {
-        applicationId "com.originate.testapp.testapp"
+        applicationId     "com.originate.testapp.testapp"
+        testInstrumentationRunner "com.originate.testapp.TestClass"
         versionCode 12
         versionName "2.0"
         minSdkVersion 16
@@ -34,4 +35,6 @@ dependencies {
     compile group: 'com.koushikdutta.ion',              name: 'ion',                version: '1.2.7'
     compile group: 'com.jeremyfeinstein.slidingmenu',   name: 'library',            version: '1.3'
     compile group: 'com.j256.ormlite',                  name: 'ormlite-android',    version: '4.48'
+
+    androidTestCompile group: 'com.google.guava',       name: 'guava',              version: '11.0.2'
 }
