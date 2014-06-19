@@ -28,7 +28,7 @@ subprojects {
 	}
 
 	dependencies {
-    	compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+		compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
     	compile group: 'com.koushikdutta.async',            name: 'androidasync',       version: '1.2.6'
     	compile group: 'com.koushikdutta.ion',              name: 'ion',                version: '1.2.7'
     	compile group: 'com.jeremyfeinstein.slidingmenu',   name: 'library',            version: '1.3'
