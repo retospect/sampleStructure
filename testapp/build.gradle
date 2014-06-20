@@ -1,7 +1,6 @@
 
 android {
     defaultConfig {
-        applicationId               "com.originate.testapp.testapp"
-        testInstrumentationRunner   "com.originate.testapp.TestClass"
+        packageName "com.originate.testapp.testapp"
     }
 }
