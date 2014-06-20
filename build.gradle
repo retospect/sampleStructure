@@ -16,8 +16,7 @@ buildscript {
     }
 }
 
-// Things that all sub projects must have access to
-
+// Things that all subprojects require
 subprojects {
 	apply plugin: 'android'
 
@@ -38,20 +37,20 @@ subprojects {
 	}
 
 	android {
-    compileSdkVersion 18
-    buildToolsVersion "19.1.0"
+        compileSdkVersion 18
+        buildToolsVersion "19.1.0"
 
-    defaultConfig {
-        versionCode 12
-        versionName "2.0"
-        minSdkVersion 16
-        targetSdkVersion 18
-    }
-    buildTypes {
-        release {
-            runProguard false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        defaultConfig {
+            versionCode 12
+            versionName "2.0"
+            minSdkVersion 16
+            targetSdkVersion 18
+        }
+        buildTypes {
+            release {
+                runProguard false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
         }
     }
-}
 }
