@@ -12,7 +12,10 @@ The purpose is to simplify the onboarding of new developers.
 (fix local.properties to point to your sdk)
 
 Then either
+
     ./gradlew installDebug
+
 or 
+
 open it in AndroidStudio.
 
