@@ -18,25 +18,25 @@ buildscript {
 
 // Things that all subprojects require
 subprojects {
-	apply plugin: 'android'
+    apply plugin: 'android'
 
-	repositories {
- 		// For sliding menu support
-    	maven { url "http://jzaccone.github.io/SlidingMenu-aar" }
-    	mavenCentral()
-	}
+    repositories {
+        // For sliding menu support
+        maven { url "http://jzaccone.github.io/SlidingMenu-aar" }
+        mavenCentral()
+    }
 
-	dependencies {
-		compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
-    	compile group: 'com.koushikdutta.async',            name: 'androidasync',       version: '1.2.6'
-    	compile group: 'com.koushikdutta.ion',              name: 'ion',                version: '1.2.7'
-    	compile group: 'com.jeremyfeinstein.slidingmenu',   name: 'library',            version: '1.3'
-    	compile group: 'com.j256.ormlite',                  name: 'ormlite-android',    version: '4.48'
+    dependencies {
+        compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+        compile group: 'com.koushikdutta.async',            name: 'androidasync',       version: '1.2.6'
+        compile group: 'com.koushikdutta.ion',              name: 'ion',                version: '1.2.7'
+        compile group: 'com.jeremyfeinstein.slidingmenu',   name: 'library',            version: '1.3'
+        compile group: 'com.j256.ormlite',                  name: 'ormlite-android',    version: '4.48'
 
-    	androidTestCompile group: 'com.google.guava',       name: 'guava',              version: '11.0.+'
-	}
+        androidTestCompile group: 'com.google.guava',       name: 'guava',              version: '11.0.+'
+    }
 
-	android {
+    android {
         compileSdkVersion 18
         buildToolsVersion "19.1.0"
 
